@@ -1,5 +1,9 @@
 package strategy;
 
-public class WeaponAxe {
-    
+public class WeaponAxe implements WeaponBehavior
+{
+    public String attack()
+    {
+        return "Twirl with an axe.";
+    }
 }
