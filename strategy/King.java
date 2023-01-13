@@ -1,21 +1,17 @@
 package strategy;
 
-public class King extends Character
-{
-    public King(String name)
-    {
+public class King extends Character {
+    public King(String name) {
         super(name);
         super.WeaponBehavior = new WeaponSword();
         this.setWeaponBehavior(super.WeaponBehavior);
     }
 
-    public String attack()
-    {
+    public String attack() {
         return this.WeaponBehavior.attack();
     }
 
-    public String toString()
-    {
+    public String toString() {
         return this.name + "is a noble king.";
     }
 }

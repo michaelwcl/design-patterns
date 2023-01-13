@@ -1,15 +1,12 @@
 package strategy;
 import java.util.Random;
 
-public class WeaponKnife implements WeaponBehavior
-{
-    public String attack()
-    {
+public class WeaponKnife implements WeaponBehavior {
+    public String attack() {
         Random r = new Random();
         int choice = r.nextInt(1, 4);
 
-        switch(choice)
-        {
+        switch(choice) {
             case 1:
             return "Slice with a knife";
             case 2:
@@ -18,7 +15,6 @@ public class WeaponKnife implements WeaponBehavior
             return "Sneak up on an opponent with a knife";
             default:
             return "Error";
-        }
-        
+        }  
     }
 }
