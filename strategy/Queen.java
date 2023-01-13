@@ -1,7 +1,6 @@
 package strategy;
 
-public class Queen extends Character
-{
+public class Queen extends Character {
     public Queen(String name) {
         super(name);
         this.WeaponBehavior = new WeaponKnife();
