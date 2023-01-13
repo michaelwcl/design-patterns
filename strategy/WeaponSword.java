@@ -6,7 +6,7 @@ public class WeaponSword implements WeaponBehavior
     public String attack()
     {
         Random r = new Random();
-        int choice = r.nextInt(4);
+        int choice = r.nextInt(1, 4);
 
         switch(choice)
         {
@@ -17,7 +17,7 @@ public class WeaponSword implements WeaponBehavior
             case 3:
             return "Jam opponents blade with sword";
             default:
-            return "Jam opponents blade with sword";
+            return "Error";
         }
     }
 }

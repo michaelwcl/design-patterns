@@ -7,7 +7,7 @@ public class WeaponNone implements WeaponBehavior
     {
         Random r = new Random();
 
-        int choice = r.nextInt(3);
+        int choice = r.nextInt(1, 3);
 
         switch(choice)
         {
@@ -16,7 +16,7 @@ public class WeaponNone implements WeaponBehavior
             case 2:
             return "No one lets me have a weapon";
             default:
-            return "No one lets me have a weapon";
+            return "Error";
         }
 
 

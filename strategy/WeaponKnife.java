@@ -6,7 +6,7 @@ public class WeaponKnife implements WeaponBehavior
     public String attack()
     {
         Random r = new Random();
-        int choice = r.nextInt(4);
+        int choice = r.nextInt(1, 4);
 
         switch(choice)
         {
@@ -17,7 +17,7 @@ public class WeaponKnife implements WeaponBehavior
             case 3:
             return "Sneak up on an opponent with a knife";
             default:
-            return "Sneak up on an opponent with a knife";
+            return "Error";
         }
         
     }

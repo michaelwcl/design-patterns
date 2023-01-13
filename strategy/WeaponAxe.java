@@ -9,7 +9,7 @@ public class WeaponAxe implements WeaponBehavior
     {
         Random r = new Random();
 
-        int choice = r.nextInt(3);
+        int choice = r.nextInt(1, 3);
 
         switch (choice)
         {
@@ -18,7 +18,7 @@ public class WeaponAxe implements WeaponBehavior
             case 2:
             return "Swing an axe";
             default:
-            return "Twirl with an axe";
+            return "Error";
         }
 
     }

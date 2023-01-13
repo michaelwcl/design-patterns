@@ -6,7 +6,7 @@ public class WeaponBow implements WeaponBehavior
     public String attack()
     {
         Random r = new Random();
-        int choice = r.nextInt(3);
+        int choice = r.nextInt(1, 3);
 
         switch(choice)
         {
