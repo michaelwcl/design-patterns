@@ -1,9 +1,16 @@
 package strategy;
 import java.util.Random;
 
-
+/**
+ * A WeaponAxe that implements WeaponBehavior
+ * @author Michael Cluver
+ */
 
 public class WeaponAxe implements WeaponBehavior {
+    /**
+     * Creates a randomized String as an attack move
+     * @return Returns a String including the random attack move
+     */
     public String attack() {
         Random r = new Random();
 
