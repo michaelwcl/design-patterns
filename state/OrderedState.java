@@ -11,6 +11,10 @@ public class OrderedState extends State{
         super(pkg, quantity);
     }
 
+    /**
+     * The following methods handles output for when the package is first ordered.
+     * Nothing is returned, and no login exists except when the program adds days for delays
+     */
     public String getStatus(){
         return "The " + pkg.getName() + " " + getVerb("was", "were")+ " ordered.";
     }

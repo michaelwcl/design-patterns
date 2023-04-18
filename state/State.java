@@ -17,6 +17,12 @@ public abstract class State {
     public abstract String getETA();
     public abstract String delay();
 
+    /**
+     * A method to choose a verb depending on the amount of items a package has
+     * @param singular A singular version of a verb
+     * @param plural A plural version of a verb
+     * @return Either singular or plural
+     */
     protected String getVerb(String singular, String plural){
         if(quantity == 1)
             return singular;

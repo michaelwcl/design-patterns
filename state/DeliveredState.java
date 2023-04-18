@@ -9,6 +9,10 @@ public class DeliveredState extends State{
         super(pkg, quantity);
     }
 
+    /**
+     * The following methods handle when the package is delivered. 
+     * The only different part compared to other states is that delaying doesn't add any days to the delivery time(since it's already delivered)
+     */
     public String getStatus(){
         return "The " + pkg.getName() + " " + getVerb("is", "are") + " here for you.";
     }

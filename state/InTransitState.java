@@ -11,6 +11,10 @@ public class InTransitState extends State{
         super(pkg, quantity);
     }
 
+    /**
+     * The following methods handles outputs for when the program reports a package in the "in transit state"
+     * The only logic is when a delay happens and the amount of days increases
+     */
     public String getStatus(){
         return "The " + pkg.getName() + " " + getVerb("is", "are") + " out for delivery.";
     }
